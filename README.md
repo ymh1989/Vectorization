@@ -15,8 +15,8 @@ As I mentioned in `Introduction`, `loop` is the main reason for increasing cpu t
 - [Python 2.7](https://www.python.org/), [numpy 1.10.4](http://www.numpy.org/)
 
 ### Parameters ### 
-  | Stock | Strike | Maturity | Riskless <p>interest rate</p>  | Volatility | Number of <p>simulations</p> 
------------- | ------------- | ------------- | ------------- | -------------
+   | Stock | Strike | Maturity | Riskless <p>interest rate</p>  | Volatility | Number of <p>simulations</p> 
+---------- | ----------- | ----------- | ----------- | -----------
 Parameters | 100.0 | 100.0 | 1.0 | 0.03 | 0.3 | 10<sup>5</sup> 
 
 ###Result###
