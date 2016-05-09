@@ -1,6 +1,7 @@
 ##Computational cost in Monte Carlo simulation using vectorization##
 
 ###Introduction###
+
 This repo contains an implementation of pricing financial derivatives using Monte Calo simulation with vectorization calculation. Generally speaking, computer program spend most of the time in loop process. Especially, Monte Carlo simulation(MCS) in finance is mainly composed of `for-loop` or `while-loop`. 
 
 The main purpose of this repo is to introduce the method for increasing performance of MCS using vectorization calculation. The program is performed by Python. 
@@ -19,7 +20,7 @@ As I mentioned in `Introduction`, `loop` is the main reason for increasing cpu t
 ###Parameters### 
 
    | Stock | Strike | Maturity | Riskless <p>interest rate</p>  | Volatility | Number of <p>simulations</p> 
----------- | ----------- | ----------- | ----------- | -----------
+---------- | ----------- | ----------- | ----------- | ----------- | ----------- | -----------
 Parameters | 100.0 | 100.0 | 1.0 | 0.03 | 0.3 | 10<sup>5</sup> 
 
 ###Result###
