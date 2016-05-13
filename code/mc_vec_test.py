@@ -24,9 +24,9 @@ def mc_call(S0, E, T, r, sig, numSim, numStep):
     dt = T / numStep; # time step
     accum = 0.0; # accumulated payoff
     t0 = time.clock();
-    for i in range(numSim): # simulation loop
+    for i in xrange(numSim): # simulation loop
         s = S0;
-        for j in range(numStep): # timestep loop
+        for j in xrange(numStep): # timestep loop
             z = np.random.normal();
             # Geometric Brownian motion
             s = s * exp((r - 0.5*sig**2)*dt + sig*sqrt(dt)*z);
@@ -44,9 +44,9 @@ def mc_call_vec1(S0, E, T, r, sig, numSim, numStep):
     accum = 0.0;
     t0 = time.clock();
     z = np.random.normal(size = [numSim, numStep]);
-    for i in range(numSim):
+    for i in xrange(numSim):
         s = S0;
-        for j in range(numStep):
+        for j in xrange(numStep):
             s = s * exp((r - 0.5*sig**2)*dt + sig*sqrt(dt)*z[i, j]);
         payoff = max(s - E, 0);
         accum = accum + payoff;
@@ -62,7 +62,7 @@ def mc_call_vec2(S0, E, T, r, sig, numSim, numStep):
     t0 = time.clock();
     z = np.random.normal(size = [numSim, numStep]);
     s = S0 * np.ones([numSim]);
-    for j in range(numStep):
+    for j in xrange(numStep):
         s[:] = s[:] * np.exp((r - 0.5*sig**2)*dt + sig*sqrt(dt)*z[:, j]);
     payoff = np.maximum(s - E, 0);
     call = exp(-r * T) * np.mean(payoff);
@@ -77,7 +77,7 @@ E = 100.0; # strike price
 T = 1.0; # maturity
 r = 0.03; # riskless interest rate
 sig = 0.3; # volatility
-ns = 1000000;  # # of simulations
+ns = 100000;  # # of simulations
 nStep = 1; # # of time steps (In this example, nStep does not have to over 1 due to European option pricing.)
 
 # functions call

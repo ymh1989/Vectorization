@@ -19,11 +19,11 @@ As I mentioned in `Introduction`, `loop` is the main reason for increasing cpu t
 
 ###Parameters###
 
-- European vanilla call option
+- Test case : European vanilla call option
 
    | Stock | Strike | Maturity | Riskless <p>interest rate</p>  | Volatility | Number of <p>simulations</p> 
 ---------- | ----------- | ----------- | ----------- | ----------- | ----------- | -----------
-Parameters | 100.0 | 100.0 | 1.0 | 0.03 | 0.3 | 10<sup>5</sup> 
+Parameters | 100.0 | 100.0 | 1.0 | 0.03 | 0.3 | 10<sup>5</sup>, 10<sup>6</sup>, 10<sup>7</sup>
 
 ###Result###
 - In this repo, I compare the cpu time(seconds) of three version for MCS using [Numpy-Python](www.numpy.org/). The parameters can be modified freely.
@@ -33,9 +33,9 @@ Parameters | 100.0 | 100.0 | 1.0 | 0.03 | 0.3 | 10<sup>5</sup>
 
 cpu time(sec) | 10<sup>5</sup>simuls  | 10<sup>6</sup>simuls  | 10<sup>7</sup>simuls
 ------------ | ------------- | ------------- | -------------
-version 0 | 0.1123 | 1.1427 | 11.3262
-version 1 | 0.1337 | 1.3427 | 13.1795
-version 2 | 0.0053 | 0.0749 | 0.7342
+version 0 | 0.1041 | 1.0476 | 10.4986
+version 1 | 0.1265 | 1.2581 | 12.5500
+version 2 | 0.0061 | 0.0735 | 0.7394
 ** Exact value of European call option: 13.28331
 
 ###Note###
