@@ -22,7 +22,7 @@ As I mentioned in `Introduction`, `loop` is the main reason for increasing cpu t
 - Test case : European vanilla call option
 
    | Stock | Strike | Maturity | Riskless <p>interest rate</p>  | Volatility | Number of <p>simulations</p> 
----------- | ----------- | ----------- | ----------- | ----------- | ----------- | -----------
+---------- | ----------- | ----------- | ----------- | ----------- | -----------
 Parameters | 100.0 | 100.0 | 1.0 | 0.03 | 0.3 | 10<sup>5</sup>, 10<sup>6</sup>, 10<sup>7</sup>
 
 ###Result###
