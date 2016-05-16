@@ -33,9 +33,9 @@ As I mentioned in `Introduction`, `loop` is the main reason for increasing cpu t
 
 cpu time(sec) | 10<sup>5</sup>simuls  | 10<sup>6</sup>simuls  | 10<sup>7</sup>simuls
 ------------ | ------------- | ------------- | -------------
-version 0 | 0.1041 | 1.0476 | 10.4986
-version 1 | 0.1265 | 1.2581 | 12.5500
-version 2 | 0.0061 | 0.0735 | 0.7394
+version 0 | 0.1176 | 1.2223 | 11.6426
+version 1 | 0.1354 | 1.3635 | 13.1086
+version 2 | 0.0059 | 0.0726 | 0.739
 ** Exact value of European call option: 13.28331
 
 ###Note###
