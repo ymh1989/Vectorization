@@ -35,7 +35,7 @@ cpu time(sec) | 10<sup>5</sup>simuls  | 10<sup>6</sup>simuls  | 10<sup>7</sup>si
 ------------ | ------------- | ------------- | -------------
 version 0 | 0.1176 | 1.2223 | 11.6426
 version 1 | 0.1354 | 1.3635 | 13.1086
-version 2 | 0.0059 | 0.0726 | 0.739
+version 2 | 0.0059 | 0.0726 | 0.7396
 ** Exact value of European call option: 13.28331
 
 ###Note###
